@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game bản quyền</title>
+    <link rel="shortcut icon" href="anh/logo-26.png" type="image/x-icon">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="library/bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
+    <!-- css chung -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- css riêng -->
+    <link rel="stylesheet" href="css/product.css">
+
+</head>
+
+<body>
+
+    <!-- header  -->
+    <header class="header fixed-top">
+        <div class="d-flex header-navbar container">
+            <!-- dropdown menu -->
+
+            <div class="dropdown">
+                <button class="btn menu-icon " type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="anh/menulist.png" alt="menu">
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li><a href="index.html"><button class="dropdown-item dropdown-text" type="button">Trang chủ</button></a></li>
+                    <li><a href="about.html"><button class="dropdown-item dropdown-text" type="button">Giới Thiệu</button></a></li>
+                    <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Sản phẩm</button></a></li>
+                    <li><a href="about.html"><button class="dropdown-item dropdown-text" type="button">Liên hệ</button></a></li>
+                    
+                </ul>
+            </div>
+
+
+            <!-- logo -->
+            <div class="header-navbar-logo justify-content-center align-items-center">
+                <a href="index.html"><img src="anh/logo-26.png" alt="anh logo"></a>
+            </div>
+            <!-- search -->
+            <div class="header-navbar-search">
+                <input type="text" placeholder="Nhập để tìm kiếm ">
+                <div class="search-icon">
+                    <a href="product.html">
+                        <img class="search-default" src="anh/MagnifyingGlass-pink.png" alt="icon-search">
+                        <img class="search-hover" src="anh/MagnifyingGlass-pink1.png" alt="icon-search">
+                    </a>
+                </div>
+            </div>
+            <!-- button giỏ hàng  -->
+            <div class="header-navbar-button">
+                <button>
+                    <div class="navbar-button">
+                        <p id="cart-number">0</p>
+                        <a href="cart.html">
+                            <img class="button-default" src="anh/ShoppingCart.png" alt="ShoppingCart">
+                            <img class="button-hover" src="anh/ShoppingCart-pink.png" alt="ShoppingCart">
+                        </a>
+                    </div>
+                </button>
+            </div>
+            <!-- button đăng nhập -->
+            <div class="header-navbar-button">
+                <button>
+                    <div class="navbar-button">
+                        <a href="about.html">
+                            <img class="button-default" src="anh/UserCircle-white.png" alt="UserCircle">
+                            <img class="button-hover" src="anh/UserCircle-pink.png" alt="UserCircle">
+                        </a>
+                    </div>
+                </button>
+            </div>
+
+        </div>
+
+    </header>
+
+  <!-- section -->
+  <section class="container">
+    <!-- navbar -->
+    <div class="menu">
+        <div class="menu-product">
+            <ul class="menu-list">
+                <li> <a href="index.html">Trang chủ</a> </li>
+                <li> <a href="about.html">Giới thiệu </a> </li>
+                <li> <a href="product.html">Sản phẩm</a> </li>
+                <li> <a href="about.html">Liên Hệ</a> </li>
+
+            </ul>
+        </div>
+
+    </div>
+       <!-- carousel -->
+       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="product.html">
+                    <img src="anh/car1.jpg" class="d-block w-100" alt="carousel">
+                </a>
+
+            </div>
+            <div class="carousel-item">
+                <a href="product.html"><img src="anh/car2.jpeg" class="d-block w-100" alt="carousel"></a>
+
+            </div>
+            <div class="carousel-item">
+                <a href="product.html"><img src="anh/car3.jpg" class="d-block w-100" alt="carousel"></a>
+
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+
+    <!-- breadcrumb -->
+    <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Game bản quyền</li>
+        </ol>
+    </nav>
+
+    <!-- main -->
+    <main class="container">
+
+        <div class="row  product">
+            <div class=" product-nameA">
+                <div class="product-name">
+                    <h1 class="product-N">
+                        Game bản quyền
+                    </h1>
+                </div>
+            </div>
+
+            <div class="col col-sm-12 col-md-6 col-lg-4 product-item ">
+                <a href="item.html" class="text-decoration-none">
+                    <img class="product-item-image" src="anh/product/fifa 22.jpg" alt="fifa22">
+                    <p class="product-item-name">Fifa22</p>
+                </a>
+                <div class="price-1">
+                    <span class="product-item-sale ">500.000đ</span>
+                    <span class="product-item-price ">1.000.000đ</span>
+                </div>
+                <div class="home-product-item__sale-off">
+                    <span class="home-product-item__sale-off-percent">50%</span>   
+                </div>
+                <p class="btn product-item-addtocart ">Thêm vào giỏ hàng</p>
+            </div> <div class="col col-sm-12 col-md-6 col-lg-4 product-item ">
+                <a href="item.html" class="text-decoration-none">
+                    <img class="product-item-image" src="anh/product/fifa 22.jpg" alt="fifa22">
+                    <p class="product-item-name">Fifa22</p>
+                </a>
+                <div class="price-1">
+                    <span class="product-item-sale ">500.000đ</span>
+                    <span class="product-item-price ">1.000.000đ</span>
+                </div>
+                <div class="home-product-item__sale-off">
+                    <span class="home-product-item__sale-off-percent">50%</span>   
+                </div>
+                <p class="btn product-item-addtocart ">Thêm vào giỏ hàng</p>
+            </div> <div class="col col-sm-12 col-md-6 col-lg-4 product-item ">
+                <a href="item.html" class="text-decoration-none">
+                    <img class="product-item-image" src="anh/product/fifa 22.jpg" alt="fifa22">
+                    <p class="product-item-name">Fifa22</p>
+                </a>
+                <div class="price-1">
+                    <span class="product-item-sale ">500.000đ</span>
+                    <span class="product-item-price ">1.000.000đ</span>
+                </div>
+                <div class="home-product-item__sale-off">
+                    <span class="home-product-item__sale-off-percent">50%</span>   
+                </div>
+                <p class="btn product-item-addtocart ">Thêm vào giỏ hàng</p>
+            </div> <div class="col col-sm-12 col-md-6 col-lg-4 product-item ">
+                <a href="item.html" class="text-decoration-none">
+                    <img class="product-item-image" src="anh/product/fifa 22.jpg" alt="fifa22">
+                    <p class="product-item-name">Fifa22</p>
+                </a>
+                <div class="price-1">
+                    <span class="product-item-sale ">500.000đ</span>
+                    <span class="product-item-price ">1.000.000đ</span>
+                </div>
+                <div class="home-product-item__sale-off">
+                    <span class="home-product-item__sale-off-percent">50%</span>   
+                </div>
+                <p class="btn product-item-addtocart ">Thêm vào giỏ hàng</p>
+            </div> <div class="col col-sm-12 col-md-6 col-lg-4 product-item ">
+                <a href="item.html" class="text-decoration-none">
+                    <img class="product-item-image" src="anh/product/fifa 22.jpg" alt="fifa22">
+                    <p class="product-item-name">Fifa22</p>
+                </a>
+                <div class="price-1">
+                    <span class="product-item-sale ">500.000đ</span>
+                    <span class="product-item-price ">1.000.000đ</span>
+                </div>
+                <div class="home-product-item__sale-off">
+                    <span class="home-product-item__sale-off-percent">50%</span>   
+                </div>
+                <p class="btn product-item-addtocart ">Thêm vào giỏ hàng</p>
+            </div> <div class="col col-sm-12 col-md-6 col-lg-4 product-item ">
+                <a href="item.html" class="text-decoration-none">
+                    <img class="product-item-image" src="anh/product/fifa 22.jpg" alt="fifa22">
+                    <p class="product-item-name">Fifa22</p>
+                </a>
+                <div class="price-1">
+                    <span class="product-item-sale ">500.000đ</span>
+                    <span class="product-item-price ">1.000.000đ</span>
+                </div>
+                <div class="home-product-item__sale-off">
+                    <span class="home-product-item__sale-off-percent">50%</span>   
+                </div>
+                <p class="btn product-item-addtocart ">Thêm vào giỏ hàng</p>
+            </div> <div class="col col-sm-12 col-md-6 col-lg-4 product-item ">
+                <a href="item.html" class="text-decoration-none">
+                    <img class="product-item-image" src="anh/product/fifa 22.jpg" alt="fifa22">
+                    <p class="product-item-name">Fifa22</p>
+                </a>
+                <div class="price-1">
+                    <span class="product-item-sale ">500.000đ</span>
+                    <span class="product-item-price ">1.000.000đ</span>
+                </div>
+                <div class="home-product-item__sale-off">
+                    <span class="home-product-item__sale-off-percent">50%</span>   
+                </div>
+                <p class="btn product-item-addtocart ">Thêm vào giỏ hàng</p>
+            </div> <div class="col col-sm-12 col-md-6 col-lg-4 product-item ">
+                <a href="item.html" class="text-decoration-none">
+                    <img class="product-item-image" src="anh/product/fifa 22.jpg" alt="fifa22">
+                    <p class="product-item-name">Fifa22</p>
+                </a>
+                <div class="price-1">
+                    <span class="product-item-sale ">500.000đ</span>
+                    <span class="product-item-price ">1.000.000đ</span>
+                </div>
+                <div class="home-product-item__sale-off">
+                    <span class="home-product-item__sale-off-percent">50%</span>   
+                </div>
+                <p class="btn product-item-addtocart ">Thêm vào giỏ hàng</p>
+            </div> <div class="col col-sm-12 col-md-6 col-lg-4 product-item ">
+                <a href="item.html" class="text-decoration-none">
+                    <img class="product-item-image" src="anh/product/fifa 22.jpg" alt="fifa22">
+                    <p class="product-item-name">Fifa22</p>
+                </a>
+                <div class="price-1">
+                    <span class="product-item-sale ">500.000đ</span>
+                    <span class="product-item-price ">1.000.000đ</span>
+                </div>
+                <div class="home-product-item__sale-off">
+                    <span class="home-product-item__sale-off-percent">50%</span>   
+                </div>
+                <p class="btn product-item-addtocart ">Thêm vào giỏ hàng</p>
+            </div>
+
+
+        </div>
+
+
+       
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item ">
+                    <a class="page-link" href="product.html" tabindex="-1" aria-disabled="true"><i
+                            class="fas fa-angle-left"></i></a>
+                </li>
+                <li class="page-item "><a class="page-link" href="product.html">1</a></li>
+                <li class="page-item active "><a class="page-link" aria-current="page" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="product2.html">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="product2.html"><i class="fas fa-angle-right"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class=" row container footer-property">
+            <div class="col-md-6  col-xl-4  footer-content ">
+                <p>
+                    <a class="btn footer-title" data-bs-toggle="collapse" href="#collapseExample1" aria-expanded="false"
+                        aria-controls="collapseExample1">
+                        Về chúng tôi
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample1">
+                    <a class="footer-link" href="about.html">Giới thiệu</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Quản lý chất lượng</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Chính sách bảo mật và quyền riêng tư</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Điều khoản và điều kiện giao dịch</a>
+                    <br />
+                </div>
+            </div>
+
+            <div class="col-md-6  col-xl-4  footer-content">
+                <p>
+                    <a class="btn footer-title" data-bs-toggle="collapse" href="#collapseExample2" role="button"
+                        aria-expanded="false" aria-controls="collapseExample2">
+                        Hỗ trợ khách hàng
+                    </a>
+
+                </p>
+                <div class="collapse" id="collapseExample2">
+                    <a class="footer-link" href="about.html">Trung tâm hỗ trợ khách hàng</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Chính sách thanh toán</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Chính sách giao hàng</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Chính sách đổi trả</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Chính sách chiết khấu và ưu đãi</a>
+                </div>
+
+
+            </div>
+            <div class="col-md-6 col-xl-4  footer-content">
+                <p>
+                    <a class="btn footer-title" data-bs-toggle="collapse" href="#collapseExample3" role="button"
+                        aria-expanded="false" aria-controls="collapseExample3">
+                        Chăm sóc khách hàng
+                    </a>
+
+                </p>
+                <div class="collapse" id="collapseExample3">
+                    <a class="footer-link" href="#">Hotline: 123456789</a>
+                    <br />
+                    <a class="footer-link" href="#">Gmail: xyzabc@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- popup -->
+    <div class='modall'></div>
+
+    <!-- icon up -->
+    <div><a href="#"><i class="fas fa-arrow-circle-up"></i></a></div>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- js chung -->
+    <script src="js/main.js"></script>
+
+    <!-- js riêng-->
+    <script src="js/product.js"></script>
+
+
+
+
+    <!-- js bootstrap -->
+    <script src="library/bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js"></script>
+</body>

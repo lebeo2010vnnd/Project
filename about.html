@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <link rel="shortcut icon" href="anh/logo-26.png" type="image/x-icon">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="library/bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
+    <!-- css chung -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- css riêng -->
+    <link rel="stylesheet" href="css/about.css">
+
+</head>
+
+<body>
+
+    <header class="header fixed-top">
+        <div class="d-flex header-navbar container">
+            <!-- dropdown menu -->
+
+            <div class="dropdown">
+                <button class="btn menu-icon " type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="anh/menulist.png" alt="menu">
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li><a href="index.html"><button class="dropdown-item dropdown-text" type="button">Trang chủ</button></a></li>
+                    <li><a href="about.html"><button class="dropdown-item dropdown-text" type="button">Giới Thiệu</button></a></li>
+                    <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Sản phẩm</button></a></li>
+                    <li><a href="about.html"><button class="dropdown-item dropdown-text" type="button">Liên hệ</button></a></li>
+                    
+                </ul>
+            </div>
+
+
+            <!-- logo -->
+            <div class="header-navbar-logo justify-content-center align-items-center">
+                <a href="index.html"><img src="anh/logo-26.png" alt="anh logo"></a>
+            </div>
+         <!-- search -->
+         <div class="header-navbar-search">
+            <input type="text" placeholder="Nhập để tìm kiếm ">
+            <div class="search-icon">
+                <a href="product.html">
+                    <img class="search-default" src="anh/MagnifyingGlass-pink.png" alt="icon-search">
+                    <img class="search-hover" src="anh/MagnifyingGlass-pink1.png" alt="icon-search">
+                </a>
+            </div>
+        </div>
+        <!-- button giỏ hàng  -->
+        <div class="header-navbar-button">
+            <button>
+                <div class="navbar-button">
+                    <p id="cart-number">0</p>
+                    <a href="cart.html">
+                        <img class="button-default" src="anh/ShoppingCart.png" alt="ShoppingCart">
+                        <img class="button-hover" src="anh/ShoppingCart-pink.png" alt="ShoppingCart">
+                    </a>
+                </div>
+            </button>
+        </div>
+        <!-- button đăng nhập -->
+        <div class="header-navbar-button">
+            <button>
+                <div class="navbar-button">
+                    <a href="about.html">
+                        <img class="button-default" src="anh/UserCircle-white.png" alt="UserCircle">
+                        <img class="button-hover" src="anh/UserCircle-pink.png" alt="UserCircle">
+                    </a>
+                </div>
+            </button>
+        </div>
+
+        </div>
+
+    </header>
+
+    
+
+    <!-- breadcrumb -->
+    <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Về chúng tôi</li>
+        </ol>
+    </nav>
+
+    <!-- main -->
+    <div class="section-about container">
+        <h1 class="text-center title">Giới thiệu về ABC Shop</h1>
+        
+        <p>ABC Shop mang đến cho người tiêu dùng lựa chọn tốt và đa dạng đáp ứng mọi nhu cầu trải nghiệm về dịch vụ giải trí điện tử hiện nay. Quý khách hàng không chỉ có thể trải nghiệm không gian dịch vụ tiện ích mà còn nhận được rất nhiều khuyến mãi, ưu đãi.</p>
+        <img src="anh/product/hinhgame1.jpg" alt="about1">
+        <h6>Tại sao nên mua game bản quyền</h6>
+        <ul>
+            <li>Được update tự động và nhanh nhất</li>
+            <li>Được chơi online và multi-player</li>
+            <li>An toàn và Bảo mật</li>
+            <li>Cài đặt đơn giản</li>
+            <li>Các tính năng đặc biệt chỉ có ở bản quyền</li>
+        </ul>
+        <img src="anh/product/hinhgam2.jpg" alt="about2">
+        <h6>Cam kết với khách hàng </h6>
+        <ul>
+            <li>Cung cấp cho khách hàng những sản phẩm đảm bảo an toàn chất lượng, đa dạng từ thực phẩm...</li>
+            <li>Dịch vụ vượt trội: Mua sắm trực tuyến dễ dàng hoặc tại cửa hàng, thanh toán thông minh nhanh chóng, an toàn bảo mật thông tin…</li>
+            <li>Vận chuyển siêu tốc: Giao hàng trong ngày với hầu hết các mặt hàng.</li>
+        </ul>
+        <p class="text-center fw-bold">XIN CHÂN THÀNH CẢM ƠN</p>
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+        <div class=" row container footer-property">
+            <div class="col-md-6  col-xl-4  footer-content ">
+                <p>
+                    <a class="btn footer-title" data-bs-toggle="collapse" href="#collapseExample1" aria-expanded="false"
+                        aria-controls="collapseExample1">
+                        Về chúng tôi
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample1">
+                    <a class="footer-link" href="about.html">Giới thiệu</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Quản lý chất lượng</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Chính sách bảo mật và quyền riêng tư</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Điều khoản và điều kiện giao dịch</a>
+                    <br />
+                </div>
+            </div>
+
+            <div class="col-md-6  col-xl-4  footer-content">
+                <p>
+                    <a class="btn footer-title" data-bs-toggle="collapse" href="#collapseExample2" role="button"
+                        aria-expanded="false" aria-controls="collapseExample2">
+                        Hỗ trợ khách hàng
+                    </a>
+
+                </p>
+                <div class="collapse" id="collapseExample2">
+                    <a class="footer-link" href="about.html">Trung tâm hỗ trợ khách hàng</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Chính sách thanh toán</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Chính sách giao hàng</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Chính sách đổi trả</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Chính sách chiết khấu và ưu đãi</a>
+                </div>
+
+
+            </div>
+            <div class="col-md-6 col-xl-4  footer-content">
+                <p>
+                    <a class="btn footer-title" data-bs-toggle="collapse" href="#collapseExample3" role="button"
+                        aria-expanded="false" aria-controls="collapseExample3">
+                        Chăm sóc khách hàng
+                    </a>
+
+                </p>
+                <div class="collapse" id="collapseExample3">
+                    <a class="footer-link" href="#">Hotline: 123456789</a>
+                    <br />
+                    <a class="footer-link" href="#">Gmail: xyzabc@gmail.com</a>
+                </div>
+
+
+            </div>
+          
+        </div>
+
+    </footer>
+
+    <!-- popup -->
+    <div class='modall'></div>
+
+    <!-- icon up -->
+    <div class="icon-up"><a href="#"><i class="fas fa-arrow-circle-up"></i></a></div>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- js chung -->
+    <script src="js/main.js"></script>
+
+    <!-- js bootstrap -->
+    <script src="library/bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
